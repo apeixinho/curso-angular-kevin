@@ -10,7 +10,7 @@
 ## Comandos utilizados
 
 - `npm start`
-- `ng generate component meu-primeiro-component`
+- `ng generate component meu-primeiro-componente`
 - `ng generate service exemplo`
 
 ## Vídeo e recursos da aula
