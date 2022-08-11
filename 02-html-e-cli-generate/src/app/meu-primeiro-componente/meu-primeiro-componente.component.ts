@@ -1,12 +1,12 @@
-import { ExemploService } from './../exemplo.service';
+import { ExemploService } from '../exemplo.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-meu-primeiro-component',
-  templateUrl: './meu-primeiro-component.component.html',
-  styleUrls: ['./meu-primeiro-component.component.css']
+  selector: 'app-meu-primeiro-componente',
+  templateUrl: './meu-primeiro-componente.component.html',
+  styleUrls: ['./meu-primeiro-componente.component.css']
 })
-export class MeuPrimeiroComponentComponent implements OnInit {
+export class MeuPrimeiroComponentComponente implements OnInit {
   dataAtual = new Date();
   listaAlunos: string[] = [];
 
