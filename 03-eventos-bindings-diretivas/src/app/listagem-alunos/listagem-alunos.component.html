@@ -1,0 +1,10 @@
+<div>
+  <p>Minha lista de alunos</p>
+  <p *ngFor="let item of listaAlunos">
+    {{ item.nome }}
+  </p>
+</div>
+
+<app-criar-atualizar-aluno (novoAlunoEmissor)="addAluno($event)"></app-criar-atualizar-aluno>
+
+<app-ver-aluno [aluno] = "listaAlunos[0]"></app-ver-aluno>
