@@ -1,4 +1,4 @@
-# Aula 02 - Html e CLI `generate`
+# Aula 03 - Eventos Html, Eventos Angular e Diretivas
 
 ## Tópicos trabalhados:
 
