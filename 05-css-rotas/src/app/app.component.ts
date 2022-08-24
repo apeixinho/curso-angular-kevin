@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '05-css-rotas';
+  title = 'aula05';
+  @ViewChild('sidenav') sidenav?: MatSidenav;
+
+
+  close() {
+    this.sidenav?.close();
+  }
 }
