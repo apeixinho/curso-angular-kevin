@@ -1,0 +1,9 @@
+<p>student works!</p>
+
+<mat-nav-list>
+  <mat-list-item *ngFor="let student of students">
+    <a matLine [routerLink]="['.']" [queryParams]="{ id: student.id }">{{ student.name }}</a>
+  </mat-list-item>
+</mat-nav-list>
+
+<button mat-button (click)="openDialog()">Open dialog</button>

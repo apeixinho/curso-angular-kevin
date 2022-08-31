@@ -1,3 +1,4 @@
+import { MatListModule } from '@angular/material/list';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import {StudentModule} from "./student/student.module";
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    StudentModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
     MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
