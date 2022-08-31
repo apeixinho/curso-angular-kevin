@@ -1,0 +1,28 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav (keydown.escape)="close()" class="app-drawer-navigator">
+
+    <a mat-button routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="close()">First Component</a>
+    <a mat-button routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="close()">Second Component</a>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button
+              class="example-icon"
+              aria-label="Example icon-button with menu icon"
+              (click)="sidenav.open()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
